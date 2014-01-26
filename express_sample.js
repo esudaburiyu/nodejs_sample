@@ -3,5 +3,5 @@ var app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(3002);
+app.listen(process.env.PORT, process.env.IP);
 console.log("server starting...");
